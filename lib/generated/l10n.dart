@@ -49,6 +49,66 @@ class S {
   static S? maybeOf(BuildContext context) {
     return Localizations.of<S>(context, S);
   }
+
+  /// `MedSync: Your Gateway to Better Health`
+  String get titleOnBoard1 {
+    return Intl.message(
+      'MedSync: Your Gateway to Better Health',
+      name: 'titleOnBoard1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Discover Wellness with MedSync`
+  String get titleOnBoard2 {
+    return Intl.message(
+      'Discover Wellness with MedSync',
+      name: 'titleOnBoard2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Best Doctor Appointment App`
+  String get titleOnBoard3 {
+    return Intl.message(
+      'Best Doctor Appointment App',
+      name: 'titleOnBoard3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Welcome Aboard MedSync: Navigating Your Health Journey`
+  String get subTitleBoard {
+    return Intl.message(
+      'Welcome Aboard MedSync: Navigating Your Health Journey',
+      name: 'subTitleBoard',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Get Started`
+  String get start {
+    return Intl.message(
+      'Get Started',
+      name: 'start',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Skip`
+  String get skip {
+    return Intl.message(
+      'Skip',
+      name: 'skip',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
@@ -57,6 +117,7 @@ class AppLocalizationDelegate extends LocalizationsDelegate<S> {
   List<Locale> get supportedLocales {
     return const <Locale>[
       Locale.fromSubtags(languageCode: 'en'),
+      Locale.fromSubtags(languageCode: 'ar'),
     ];
   }
 

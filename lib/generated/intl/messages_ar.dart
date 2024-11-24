@@ -1,5 +1,5 @@
 // DO NOT EDIT. This is code generated via package:intl/generate_localized.dart
-// This is a library that provides messages for a en locale. All the
+// This is a library that provides messages for a ar locale. All the
 // messages from the main program should be duplicated here with the same
 // function name.
 
@@ -18,19 +18,19 @@ final messages = new MessageLookup();
 typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 
 class MessageLookup extends MessageLookupByLibrary {
-  String get localeName => 'en';
+  String get localeName => 'ar';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "skip": MessageLookupByLibrary.simpleMessage("Skip"),
-        "start": MessageLookupByLibrary.simpleMessage("Get Started"),
+        "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
+        "start": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
         "subTitleBoard": MessageLookupByLibrary.simpleMessage(
-            "Welcome Aboard MedSync: Navigating Your Health Journey"),
+            "مرحبًا بك في ميدسينك: دليلك في رحلة العناية بصحتك"),
         "titleOnBoard1": MessageLookupByLibrary.simpleMessage(
-            "MedSync: Your Gateway to Better Health"),
+            "ميدسينك: بوابتك إلى صحة أفضل"),
         "titleOnBoard2": MessageLookupByLibrary.simpleMessage(
-            "Discover Wellness with MedSync"),
-        "titleOnBoard3":
-            MessageLookupByLibrary.simpleMessage("Best Doctor Appointment App")
+            "استمتع بحياة صحية مع ميدسينك"),
+        "titleOnBoard3": MessageLookupByLibrary.simpleMessage(
+            "أفضل تطبيق لحجز مواعيد مع الأطباء")
       };
 }

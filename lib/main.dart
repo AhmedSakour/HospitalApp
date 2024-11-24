@@ -1,9 +1,8 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:medsync/core/constant/size_config.dart';
+import 'package:medsync/core/constant/app_routes.dart';
 import 'package:medsync/core/themes/app_themes.dart';
-import 'package:medsync/features/app_layout/presentation/view/app_layout_view.dart';
 import 'package:medsync/generated/l10n.dart';
 
 void main() {
@@ -23,14 +22,12 @@ class MyApp extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: S.delegate.supportedLocales,
-      locale: DevicePreview.locale(context),
+      locale: const Locale('en'),
       builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
+      initialRoute: AppRoutes.appLayout,
+      onGenerateRoute: AppRoutes.generateRoute,
       theme: AppTheme.lightTheme(context),
-      home: Builder(builder: (context) {
-        SizeConfig.init(context);
-        return const AppLayoutView();
-      }),
     );
   }
 }
