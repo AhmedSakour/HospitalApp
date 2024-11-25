@@ -6,7 +6,7 @@ import 'package:medsync/core/themes/app_themes.dart';
 import 'package:medsync/generated/l10n.dart';
 
 void main() {
-  runApp(DevicePreview(enabled: true, builder: (context) => const MyApp()));
+  runApp(DevicePreview(enabled: false, builder: (context) => const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: S.delegate.supportedLocales,
-      locale: const Locale('en'),
+      locale: null,
       builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
       initialRoute: AppRoutes.appLayout,
