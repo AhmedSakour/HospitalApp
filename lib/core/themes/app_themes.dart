@@ -6,24 +6,39 @@ import 'package:medsync/core/utils/functions/get_current_language.dart';
 abstract class AppTheme {
   static ThemeData lightTheme(context) {
     return ThemeData(
-        textTheme: getCurrentLangauge() == 'en'
-            ? GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
-            : GoogleFonts.cairoTextTheme(Theme.of(context).textTheme),
+        textTheme: getCurrentLangauge() == 'ar'
+            ? GoogleFonts.cairoTextTheme(Theme.of(context)
+                .textTheme
+                .apply(bodyColor: AppColor.blackColor))
+            : GoogleFonts.poppinsTextTheme(Theme.of(context)
+                .textTheme
+                .apply(bodyColor: AppColor.blackColor)),
         scaffoldBackgroundColor: AppColor.whiteColor,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: AppColor.whiteColor,
+        ),
         brightness: Brightness.light,
         colorScheme: const ColorScheme.light(
+          onPrimary: AppColor.blackColor,
           primaryContainer: AppColor.primaryLightColor,
         ));
   }
 
   static ThemeData darkTheme(context) {
     return ThemeData(
-        textTheme: getCurrentLangauge() == 'en'
-            ? GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
-            : GoogleFonts.cairoTextTheme(Theme.of(context).textTheme),
+        textTheme: getCurrentLangauge() == 'ar'
+            ? GoogleFonts.cairoTextTheme(Theme.of(context)
+                .textTheme
+                .apply(bodyColor: AppColor.whiteColor))
+            : GoogleFonts.poppinsTextTheme(Theme.of(context)
+                .textTheme
+                .apply(bodyColor: AppColor.whiteColor)),
         scaffoldBackgroundColor: AppColor.secondaryDarkColor,
+        appBarTheme:
+            const AppBarTheme(backgroundColor: AppColor.secondaryDarkColor),
         brightness: Brightness.dark,
         colorScheme: const ColorScheme.dark(
+          onPrimary: AppColor.whiteColor,
           primaryContainer: AppColor.primaryDarkColor,
         ));
   }

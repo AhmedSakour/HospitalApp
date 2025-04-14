@@ -7,8 +7,8 @@ class SizeConfig {
   static const double desktop = 1200;
   static const double tablet = 800;
 
-  static void init(BuildContext context) {
-    final size = MediaQuery.of(context).size;
+  void init(BuildContext context) {
+    var size = MediaQuery.sizeOf(context);
     screenWidth = size.width;
     screenHeight = size.height;
   }

@@ -2,6 +2,22 @@
 class Assets {
   Assets._();
   
+  /// Assets for imagesAppleLogo
+  /// assests/images/apple_logo.png
+  static const String imagesAppleLogo = "assests/images/apple_logo.png";
+
+  /// Assets for imagesAppleLogoLight
+  /// assests/images/apple_logo_light.png
+  static const String imagesAppleLogoLight = "assests/images/apple_logo_light.png";
+
+  /// Assets for imagesFacebookLogo
+  /// assests/images/facebook_logo.png
+  static const String imagesFacebookLogo = "assests/images/facebook_logo.png";
+
+  /// Assets for imagesGoogleLogo
+  /// assests/images/google_logo.png
+  static const String imagesGoogleLogo = "assests/images/google_logo.png";
+
   /// Assets for imagesLogo
   /// assests/images/logo.png
   static const String imagesLogo = "assests/images/logo.png";

@@ -34,6 +34,16 @@ abstract class AppStyles {
     fontWeight: FontWeight.w400,
     fontSize: AppStyles.getResponsiveFontSize(fontSize: 14),
   );
+  static TextStyle styleRegular15 = TextStyle(
+    color: AppColor.greyColor,
+    fontWeight: FontWeight.w400,
+    fontSize: AppStyles.getResponsiveFontSize(fontSize: 15),
+  );
+  static TextStyle styleBold16 = TextStyle(
+    color: AppColor.greyColor,
+    fontWeight: FontWeight.w700,
+    fontSize: AppStyles.getResponsiveFontSize(fontSize: 16),
+  );
   static double getResponsiveFontSize({required double fontSize}) {
     double scaleFactor = AppStyles.getScaleFactor();
     double responsiveFontSize = fontSize * scaleFactor;

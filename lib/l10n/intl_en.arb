@@ -1,9 +1,35 @@
 {
-    "titleOnBoard1":"MedSync: Your Gateway to Better Health",
-    "titleOnBoard2":"Discover Wellness with MedSync",
-    "titleOnBoard3":"Best Doctor Appointment App",
-    "subTitleBoard":"Welcome Aboard MedSync: Navigating Your Health Journey",
-    "start":"Get Started",
-    "skip":"Skip"
+    
+    
+       
+        "titleOnBoard1":"MedSync: Your Gateway to Better Health",
+        "titleOnBoard2":"Discover Wellness with MedSync",
+        "titleOnBoard3":"Best Doctor Appointment App",
+        "subTitleBoard":"Welcome Aboard MedSync: Navigating Your Health Journey",
+        "start":"Get Started",
+        "skip":"Skip",
+         
+    
+        "login":"Login",
+        "hintEmail":"Enter your email",
+        "hintPassword":"Enter your password",
+        "forgetPassword":"Forgot Password?",
+        "validateEmail":"please enter your email",
+        "validatePassword":"please enter your password",
+        "errorFormateEmail":"email format error",
+        "shortPassword":"short password",
+        "notHaveAccount":"Don't have an account?",
+        "or":"OR",
+        "appleOption":"Continue with Apple",
+        "facebookOption":"Continue with Facebook",
+        "googleOption":"Continue with Google",
+
+        "sign":"Sign Up"
+
+
+        
+    
+    
+    
 
 }

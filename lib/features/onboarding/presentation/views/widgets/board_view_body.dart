@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medsync/core/constant/app_routes.dart';
 import 'package:medsync/core/themes/app_styles.dart';
 import 'package:medsync/features/onboarding/data/models/onboard_item_model.dart';
 import 'package:medsync/features/onboarding/presentation/views/widgets/custom_listview_dash.dart';
@@ -24,9 +25,15 @@ class BoardViewBody extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Align(
-              alignment: Alignment.bottomRight,
-              child: Text(S.of(context).skip, style: AppStyles.styleMedium16)),
+          GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(context, AppRoutes.login);
+            },
+            child: Align(
+                alignment: Alignment.bottomRight,
+                child:
+                    Text(S.of(context).skip, style: AppStyles.styleMedium16)),
+          ),
           const Expanded(
             child: SizedBox(),
           ),

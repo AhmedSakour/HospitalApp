@@ -22,6 +22,27 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "appleOption":
+            MessageLookupByLibrary.simpleMessage("متابعة باستخدام آبل"),
+        "errorFormateEmail": MessageLookupByLibrary.simpleMessage(
+            "خطأ في تنسيق البريد الإلكتروني"),
+        "facebookOption":
+            MessageLookupByLibrary.simpleMessage("متابعة باستخدام فيسبوك"),
+        "forgetPassword":
+            MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
+        "googleOption":
+            MessageLookupByLibrary.simpleMessage("متابعة باستخدام جوجل"),
+        "hintEmail":
+            MessageLookupByLibrary.simpleMessage("أدخل بريدك الإلكتروني"),
+        "hintPassword":
+            MessageLookupByLibrary.simpleMessage("أدخل كلمة المرور"),
+        "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "notHaveAccount":
+            MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟"),
+        "or": MessageLookupByLibrary.simpleMessage("أو"),
+        "shortPassword":
+            MessageLookupByLibrary.simpleMessage("كلمة المرور قصيرة"),
+        "sign": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
         "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
         "start": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
         "subTitleBoard": MessageLookupByLibrary.simpleMessage(
@@ -31,6 +52,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "titleOnBoard2": MessageLookupByLibrary.simpleMessage(
             "استمتع بحياة صحية مع ميدسينك"),
         "titleOnBoard3": MessageLookupByLibrary.simpleMessage(
-            "أفضل تطبيق لحجز مواعيد مع الأطباء")
+            "أفضل تطبيق لحجز مواعيد مع الأطباء"),
+        "validateEmail":
+            MessageLookupByLibrary.simpleMessage("يرجى إدخال بريدك الإلكتروني"),
+        "validatePassword":
+            MessageLookupByLibrary.simpleMessage("يرجى إدخال كلمة المرور")
       };
 }

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:medsync/core/constant/app_routes.dart';
 import 'package:medsync/core/themes/app_styles.dart';
+import 'package:medsync/core/widgets/custom_button.dart';
 import 'package:medsync/features/onboarding/data/models/onboard_item_model.dart';
-import 'package:medsync/features/onboarding/presentation/views/widgets/custom_button.dart';
 import 'package:medsync/features/onboarding/presentation/views/widgets/image_with_title_with_effect_section.dart';
 import 'package:medsync/features/onboarding/presentation/views/widgets/logo_with_title_section.dart';
 import 'package:medsync/generated/l10n.dart';
@@ -34,7 +35,12 @@ class BoardViewBodyWithTitle extends StatelessWidget {
           const SizedBox(
             height: 32,
           ),
-          CustomButton(title: S.of(context).start),
+          CustomButton(
+            title: S.of(context).start,
+            onTap: () {
+              Navigator.pushNamed(context, AppRoutes.login);
+            },
+          ),
           const Expanded(
             child: SizedBox(),
           ),

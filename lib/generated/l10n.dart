@@ -109,6 +109,146 @@ class S {
       args: [],
     );
   }
+
+  /// `Login`
+  String get login {
+    return Intl.message(
+      'Login',
+      name: 'login',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter your email`
+  String get hintEmail {
+    return Intl.message(
+      'Enter your email',
+      name: 'hintEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter your password`
+  String get hintPassword {
+    return Intl.message(
+      'Enter your password',
+      name: 'hintPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Forgot Password?`
+  String get forgetPassword {
+    return Intl.message(
+      'Forgot Password?',
+      name: 'forgetPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `please enter your email`
+  String get validateEmail {
+    return Intl.message(
+      'please enter your email',
+      name: 'validateEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `please enter your password`
+  String get validatePassword {
+    return Intl.message(
+      'please enter your password',
+      name: 'validatePassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `email format error`
+  String get errorFormateEmail {
+    return Intl.message(
+      'email format error',
+      name: 'errorFormateEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `short password`
+  String get shortPassword {
+    return Intl.message(
+      'short password',
+      name: 'shortPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Don't have an account?`
+  String get notHaveAccount {
+    return Intl.message(
+      'Don\'t have an account?',
+      name: 'notHaveAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `OR`
+  String get or {
+    return Intl.message(
+      'OR',
+      name: 'or',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Continue with Apple`
+  String get appleOption {
+    return Intl.message(
+      'Continue with Apple',
+      name: 'appleOption',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Continue with Facebook`
+  String get facebookOption {
+    return Intl.message(
+      'Continue with Facebook',
+      name: 'facebookOption',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Continue with Google`
+  String get googleOption {
+    return Intl.message(
+      'Continue with Google',
+      name: 'googleOption',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sign Up`
+  String get sign {
+    return Intl.message(
+      'Sign Up',
+      name: 'sign',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

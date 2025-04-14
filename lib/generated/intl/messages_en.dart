@@ -22,6 +22,25 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "appleOption":
+            MessageLookupByLibrary.simpleMessage("Continue with Apple"),
+        "errorFormateEmail":
+            MessageLookupByLibrary.simpleMessage("email format error"),
+        "facebookOption":
+            MessageLookupByLibrary.simpleMessage("Continue with Facebook"),
+        "forgetPassword":
+            MessageLookupByLibrary.simpleMessage("Forgot Password?"),
+        "googleOption":
+            MessageLookupByLibrary.simpleMessage("Continue with Google"),
+        "hintEmail": MessageLookupByLibrary.simpleMessage("Enter your email"),
+        "hintPassword":
+            MessageLookupByLibrary.simpleMessage("Enter your password"),
+        "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "notHaveAccount":
+            MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
+        "or": MessageLookupByLibrary.simpleMessage("OR"),
+        "shortPassword": MessageLookupByLibrary.simpleMessage("short password"),
+        "sign": MessageLookupByLibrary.simpleMessage("Sign Up"),
         "skip": MessageLookupByLibrary.simpleMessage("Skip"),
         "start": MessageLookupByLibrary.simpleMessage("Get Started"),
         "subTitleBoard": MessageLookupByLibrary.simpleMessage(
@@ -31,6 +50,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "titleOnBoard2": MessageLookupByLibrary.simpleMessage(
             "Discover Wellness with MedSync"),
         "titleOnBoard3":
-            MessageLookupByLibrary.simpleMessage("Best Doctor Appointment App")
+            MessageLookupByLibrary.simpleMessage("Best Doctor Appointment App"),
+        "validateEmail":
+            MessageLookupByLibrary.simpleMessage("please enter your email"),
+        "validatePassword":
+            MessageLookupByLibrary.simpleMessage("please enter your password")
       };
 }

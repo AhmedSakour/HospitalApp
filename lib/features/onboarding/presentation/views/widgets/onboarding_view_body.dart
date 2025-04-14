@@ -3,7 +3,8 @@ import 'package:medsync/core/constant/app_images.dart';
 import 'package:medsync/features/onboarding/data/models/onboard_item_model.dart';
 import 'package:medsync/features/onboarding/presentation/views/widgets/board_view_body.dart';
 import 'package:medsync/features/onboarding/presentation/views/widgets/board_view_body_with_title.dart';
-import 'package:medsync/generated/l10n.dart';
+
+import '../../../../../generated/l10n.dart';
 
 class OnboardingViewBody extends StatefulWidget {
   const OnboardingViewBody({super.key});
@@ -38,11 +39,9 @@ class _OnboardingViewBodyState extends State<OnboardingViewBody> {
                 onboardItemModel: items[index],
                 isCurrentIndex: index,
                 onPressed: () {
-                  if (currentIndex < 3) {
-                    _pageController.nextPage(
-                        duration: const Duration(microseconds: 500),
-                        curve: Curves.bounceIn);
-                  }
+                  _pageController.nextPage(
+                      duration: const Duration(microseconds: 500),
+                      curve: Curves.bounceIn);
                 },
               )
             : BoardViewBodyWithTitle(
