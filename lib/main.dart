@@ -14,6 +14,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Locale x = const Locale('en');
+
     return MaterialApp(
       localizationsDelegates: const [
         S.delegate,
@@ -22,12 +24,12 @@ class MyApp extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: S.delegate.supportedLocales,
-      locale: null,
+      locale: x,
       builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
       initialRoute: AppRoutes.appLayout,
       onGenerateRoute: AppRoutes.generateRoute,
-      theme: AppTheme.lightTheme(context),
+      theme: AppTheme.lightTheme(context, x),
     );
   }
 }

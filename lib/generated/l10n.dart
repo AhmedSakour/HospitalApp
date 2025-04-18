@@ -240,11 +240,31 @@ class S {
     );
   }
 
+  /// `Welcome Back`
+  String get welcome {
+    return Intl.message(
+      'Welcome Back',
+      name: 'welcome',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Sign Up`
   String get sign {
     return Intl.message(
       'Sign Up',
       name: 'sign',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Once again you login successfully into MedSync app`
+  String get loginSuccess {
+    return Intl.message(
+      'Once again you login successfully into MedSync app',
+      name: 'loginSuccess',
       desc: '',
       args: [],
     );

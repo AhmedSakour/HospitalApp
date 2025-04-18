@@ -36,6 +36,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "hintPassword":
             MessageLookupByLibrary.simpleMessage("Enter your password"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "loginSuccess": MessageLookupByLibrary.simpleMessage(
+            "Once again you login successfully into MedSync app"),
         "notHaveAccount":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
         "or": MessageLookupByLibrary.simpleMessage("OR"),
@@ -54,6 +56,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "validateEmail":
             MessageLookupByLibrary.simpleMessage("please enter your email"),
         "validatePassword":
-            MessageLookupByLibrary.simpleMessage("please enter your password")
+            MessageLookupByLibrary.simpleMessage("please enter your password"),
+        "welcome": MessageLookupByLibrary.simpleMessage("Welcome Back")
       };
 }

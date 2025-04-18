@@ -4,9 +4,9 @@ import 'package:medsync/core/themes/app_colors.dart';
 import 'package:medsync/core/utils/functions/get_current_language.dart';
 
 abstract class AppTheme {
-  static ThemeData lightTheme(context) {
+  static ThemeData lightTheme(context, local) {
     return ThemeData(
-        textTheme: getCurrentLangauge() == 'ar'
+        textTheme: local.toString() == 'ar'
             ? GoogleFonts.cairoTextTheme(Theme.of(context)
                 .textTheme
                 .apply(bodyColor: AppColor.blackColor))

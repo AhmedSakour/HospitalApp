@@ -23,8 +23,9 @@
         "appleOption":"Continue with Apple",
         "facebookOption":"Continue with Facebook",
         "googleOption":"Continue with Google",
-
-        "sign":"Sign Up"
+        "welcome":"Welcome Back",
+        "sign":"Sign Up",
+        "loginSuccess":"Once again you login successfully into MedSync app"
 
 
         

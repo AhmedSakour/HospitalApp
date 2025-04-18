@@ -3,6 +3,7 @@ import 'package:medsync/core/themes/app_colors.dart';
 import 'package:medsync/core/themes/app_styles.dart';
 import 'package:medsync/core/widgets/custom_button.dart';
 import 'package:medsync/features/auth/presentation/views/widgets/custom_listview_options_login.dart';
+import 'package:medsync/features/auth/presentation/views/widgets/custom_modal_bottom_sheet.dart';
 import 'package:medsync/features/auth/presentation/views/widgets/login_textformfields_section.dart';
 import 'package:medsync/features/auth/presentation/views/widgets/or_option_selection.dart';
 import 'package:medsync/features/auth/presentation/views/widgets/register_section.dart';
@@ -51,7 +52,9 @@ class _LoginViewBodyState extends State<LoginViewBody> {
                 child: CustomButton(
                   title: S.of(context).login,
                   onTap: () {
-                    if (formKey.currentState!.validate()) {}
+                    if (formKey.currentState!.validate()) {
+                      showCustomModalBottomSheet(context);
+                    }
                   },
                 ),
               ),

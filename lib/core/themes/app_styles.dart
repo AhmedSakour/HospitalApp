@@ -4,6 +4,11 @@ import 'package:medsync/core/themes/app_colors.dart';
 import '../constant/size_config.dart';
 
 abstract class AppStyles {
+  static TextStyle styleSemiBold24 = TextStyle(
+    color: AppColor.blackColor,
+    fontWeight: FontWeight.w600,
+    fontSize: AppStyles.getResponsiveFontSize(fontSize: 24),
+  );
   static TextStyle styleSemiBold22 = TextStyle(
     color: AppColor.primaryLightColor,
     fontWeight: FontWeight.w600,

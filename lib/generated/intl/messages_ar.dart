@@ -37,6 +37,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "hintPassword":
             MessageLookupByLibrary.simpleMessage("أدخل كلمة المرور"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "loginSuccess": MessageLookupByLibrary.simpleMessage(
+            "مرة أخرى قمت بتسجيل الدخول بنجاح إلى تطبيق ميدسينك"),
         "notHaveAccount":
             MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟"),
         "or": MessageLookupByLibrary.simpleMessage("أو"),
@@ -56,6 +58,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "validateEmail":
             MessageLookupByLibrary.simpleMessage("يرجى إدخال بريدك الإلكتروني"),
         "validatePassword":
-            MessageLookupByLibrary.simpleMessage("يرجى إدخال كلمة المرور")
+            MessageLookupByLibrary.simpleMessage("يرجى إدخال كلمة المرور"),
+        "welcome": MessageLookupByLibrary.simpleMessage("أهلاً بعودتك")
       };
 }
