@@ -3,38 +3,76 @@ import 'package:medsync/core/themes/app_colors.dart';
 import 'package:medsync/features/auth/presentation/views/widgets/custom_text_form_field.dart';
 import 'package:medsync/generated/l10n.dart';
 
-class LoginTextFormFieldsSection extends StatefulWidget {
-  const LoginTextFormFieldsSection({
-    super.key,
-  });
+class SignUpTextformfieldsSection extends StatefulWidget {
+  const SignUpTextformfieldsSection({super.key});
 
   @override
-  State<LoginTextFormFieldsSection> createState() =>
-      _LoginTextFormFieldsSectionState();
+  State<SignUpTextformfieldsSection> createState() =>
+      _SignUpTextformfieldsSectionState();
 }
 
-class _LoginTextFormFieldsSectionState
-    extends State<LoginTextFormFieldsSection> {
+class _SignUpTextformfieldsSectionState
+    extends State<SignUpTextformfieldsSection> {
+  TextEditingController nameController = TextEditingController();
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   bool visiblePassword = false;
+  Color prefixIconColorNameField = AppColor.greyColor;
   Color prefixIconColorEmailField = AppColor.greyColor;
   Color suffixIconColorEmailField = AppColor.greyColor;
   Color prefixIconColorPasswordField = AppColor.greyColor;
-  final FocusNode focusNodePasswordField = FocusNode();
+  final FocusNode focusNodeNameField = FocusNode();
   final FocusNode focusNodeEmailField = FocusNode();
+  final FocusNode focusNodePasswordField = FocusNode();
+  Color borderColorNameField = AppColor.lightGrey;
   Color borderColorEmailField = AppColor.lightGrey;
   Color borderColorPasswordField = AppColor.lightGrey;
-
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         CustomTextFormField(
+          prefixIconColor: prefixIconColorNameField,
+          onTap: () {
+            setState(() {
+              prefixIconColorNameField = AppColor.primaryLightColor;
+              prefixIconColorEmailField = AppColor.greyColor;
+              prefixIconColorPasswordField = AppColor.greyColor;
+            });
+          },
+          onTapOutside: (event) {
+            focusNodeNameField.unfocus();
+            setState(() {
+              prefixIconColorNameField = AppColor.greyColor;
+            });
+          },
+          borderColor: borderColorNameField,
+          focusNode: focusNodeNameField,
+          controller: nameController,
+          hint: S.of(context).hintName,
+          prefixIcon: Icons.person_outline,
+          textInputType: TextInputType.name,
+          validator: (value) {
+            if (value!.isEmpty) {
+              borderColorNameField = AppColor.redColor;
+
+              return S.of(context).validateName;
+            }
+            borderColorNameField = AppColor.lightGrey;
+            setState(() {});
+
+            return null;
+          },
+        ),
+        const SizedBox(
+          height: 16,
+        ),
+        CustomTextFormField(
           prefixIconColor: prefixIconColorEmailField,
           onTap: () {
             setState(() {
               prefixIconColorEmailField = AppColor.primaryLightColor;
+              prefixIconColorNameField = AppColor.greyColor;
               prefixIconColorPasswordField = AppColor.greyColor;
             });
           },
@@ -47,7 +85,7 @@ class _LoginTextFormFieldsSectionState
           onChanged: (value) {
             if (value.endsWith('@gmail.com') &&
                 !value.startsWith('@gmail.com')) {
-              suffixIconColorEmailField = Colors.green;
+              suffixIconColorEmailField = AppColor.greenColor;
             } else {
               suffixIconColorEmailField = AppColor.greyColor;
             }
@@ -65,11 +103,11 @@ class _LoginTextFormFieldsSectionState
           textInputType: TextInputType.emailAddress,
           validator: (value) {
             if (value!.isEmpty) {
-              borderColorEmailField = Colors.red;
+              borderColorEmailField = AppColor.redColor;
 
               return S.of(context).validateEmail;
             } else if (!value.contains('@gmail.com')) {
-              borderColorEmailField = Colors.red;
+              borderColorEmailField = AppColor.redColor;
 
               return S.of(context).errorFormateEmail;
             }
@@ -87,6 +125,7 @@ class _LoginTextFormFieldsSectionState
             setState(() {
               prefixIconColorPasswordField = AppColor.primaryLightColor;
               prefixIconColorEmailField = AppColor.greyColor;
+              prefixIconColorNameField = AppColor.greyColor;
             });
           },
           onTapOutside: (event) {
@@ -109,11 +148,11 @@ class _LoginTextFormFieldsSectionState
           suffixIcon: visiblePassword ? Icons.visibility_off : Icons.visibility,
           validator: (value) {
             if (value!.isEmpty) {
-              borderColorPasswordField = Colors.red;
+              borderColorPasswordField = AppColor.redColor;
 
               return S.of(context).validatePassword;
             } else if (value.length < 8) {
-              borderColorPasswordField = Colors.red;
+              borderColorPasswordField = AppColor.redColor;
 
               return S.of(context).shortPassword;
             }

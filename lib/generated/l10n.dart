@@ -130,6 +130,16 @@ class S {
     );
   }
 
+  /// `Enter your name`
+  String get hintName {
+    return Intl.message(
+      'Enter your name',
+      name: 'hintName',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Enter your password`
   String get hintPassword {
     return Intl.message(
@@ -155,6 +165,16 @@ class S {
     return Intl.message(
       'please enter your email',
       name: 'validateEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `please enter your name`
+  String get validateName {
+    return Intl.message(
+      'please enter your name',
+      name: 'validateName',
       desc: '',
       args: [],
     );
@@ -265,6 +285,526 @@ class S {
     return Intl.message(
       'Once again you login successfully into MedSync app',
       name: 'loginSuccess',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `I agree to the`
+  String get agree {
+    return Intl.message(
+      'I agree to the',
+      name: 'agree',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `and`
+  String get and {
+    return Intl.message(
+      'and',
+      name: 'and',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` Terms of Service `
+  String get terms {
+    return Intl.message(
+      ' Terms of Service ',
+      name: 'terms',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` Privacy Policy `
+  String get privacy {
+    return Intl.message(
+      ' Privacy Policy ',
+      name: 'privacy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Already have an account yet?`
+  String get haveAccount {
+    return Intl.message(
+      'Already have an account yet?',
+      name: 'haveAccount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Success`
+  String get success {
+    return Intl.message(
+      'Success',
+      name: 'success',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your account has been successfully registered`
+  String get registerSuccess {
+    return Intl.message(
+      'Your account has been successfully registered',
+      name: 'registerSuccess',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Information Collection and Use`
+  String get informationPrivacy {
+    return Intl.message(
+      'Information Collection and Use',
+      name: 'informationPrivacy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We collect info such as your IP address, app usage data, time spent, and OS.`
+  String get firstInformation {
+    return Intl.message(
+      'We collect info such as your IP address, app usage data, time spent, and OS.',
+      name: 'firstInformation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We do not collect precise location data.`
+  String get secondInformation {
+    return Intl.message(
+      'We do not collect precise location data.',
+      name: 'secondInformation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You may be contacted for important updates or promotions.`
+  String get thirdInformation {
+    return Intl.message(
+      'You may be contacted for important updates or promotions.',
+      name: 'thirdInformation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Third Party Access`
+  String get partyAccess {
+    return Intl.message(
+      'Third Party Access',
+      name: 'partyAccess',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Only anonymized data is shared with third parties.`
+  String get firstPartyAccess {
+    return Intl.message(
+      'Only anonymized data is shared with third parties.',
+      name: 'firstPartyAccess',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Third-party services used include Google Play Services, Firebase, and Facebook.`
+  String get secondPartyAccess {
+    return Intl.message(
+      'Third-party services used include Google Play Services, Firebase, and Facebook.',
+      name: 'secondPartyAccess',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Data may be disclosed to comply with legal obligations or protect users.`
+  String get thirdPartyAccess {
+    return Intl.message(
+      'Data may be disclosed to comply with legal obligations or protect users.',
+      name: 'thirdPartyAccess',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Opt-Out Rights`
+  String get rights {
+    return Intl.message(
+      'Opt-Out Rights',
+      name: 'rights',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You can stop data collection by uninstalling the app.`
+  String get rightsContent {
+    return Intl.message(
+      'You can stop data collection by uninstalling the app.',
+      name: 'rightsContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Data Retention Policy`
+  String get dataRetention {
+    return Intl.message(
+      'Data Retention Policy',
+      name: 'dataRetention',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We retain your data as long as needed. To request deletion, email us at medSync77@gmail.com`
+  String get dataRetentionContent {
+    return Intl.message(
+      'We retain your data as long as needed. To request deletion, email us at medSync77@gmail.com',
+      name: 'dataRetentionContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Children`
+  String get child {
+    return Intl.message(
+      'Children',
+      name: 'child',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We do not knowingly collect data from children under 13.`
+  String get firstChild {
+    return Intl.message(
+      'We do not knowingly collect data from children under 13.',
+      name: 'firstChild',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `If discovered, their data will be immediately deleted.`
+  String get secondChild {
+    return Intl.message(
+      'If discovered, their data will be immediately deleted.',
+      name: 'secondChild',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Security`
+  String get security {
+    return Intl.message(
+      'Security',
+      name: 'security',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We use safeguards to protect your data.`
+  String get securityContent {
+    return Intl.message(
+      'We use safeguards to protect your data.',
+      name: 'securityContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Changes`
+  String get changes {
+    return Intl.message(
+      'Changes',
+      name: 'changes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This policy may be updated. Please review it periodically.`
+  String get changesContent {
+    return Intl.message(
+      'This policy may be updated. Please review it periodically.',
+      name: 'changesContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your Consent`
+  String get consent {
+    return Intl.message(
+      'Your Consent',
+      name: 'consent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `By using the app, you consent to the policy and any changes.`
+  String get consentContent {
+    return Intl.message(
+      'By using the app, you consent to the policy and any changes.',
+      name: 'consentContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Contact Us`
+  String get contact {
+    return Intl.message(
+      'Contact Us',
+      name: 'contact',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `If you have any questions, email us at: medSync77@gmail.com`
+  String get contactContent {
+    return Intl.message(
+      'If you have any questions, email us at: medSync77@gmail.com',
+      name: 'contactContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Effective Date: 2025-04-19`
+  String get datePrivacy {
+    return Intl.message(
+      'Effective Date: 2025-04-19',
+      name: 'datePrivacy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `OK`
+  String get ok {
+    return Intl.message(
+      'OK',
+      name: 'ok',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `User Agreement`
+  String get agreement {
+    return Intl.message(
+      'User Agreement',
+      name: 'agreement',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `By downloading or using the app, you agree to our terms. Unauthorized copying, modifying, translating, or creating derivatives of the app is not allowed.`
+  String get agreementContent {
+    return Intl.message(
+      'By downloading or using the app, you agree to our terms. Unauthorized copying, modifying, translating, or creating derivatives of the app is not allowed.',
+      name: 'agreementContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Modifications & Charges`
+  String get modification {
+    return Intl.message(
+      'Modifications & Charges',
+      name: 'modification',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We may modify the app or charge for services. Any such changes will be communicated clearly.`
+  String get modificationContent {
+    return Intl.message(
+      'We may modify the app or charge for services. Any such changes will be communicated clearly.',
+      name: 'modificationContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Security & Jailbreaking`
+  String get securityWarning {
+    return Intl.message(
+      'Security & Jailbreaking',
+      name: 'securityWarning',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Avoid jailbreaking/rooting your phone. It may expose you to security risks and app malfunction.`
+  String get securityWarningContent {
+    return Intl.message(
+      'Avoid jailbreaking/rooting your phone. It may expose you to security risks and app malfunction.',
+      name: 'securityWarningContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Third-Party Services`
+  String get thirdParty {
+    return Intl.message(
+      'Third-Party Services',
+      name: 'thirdParty',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The app uses third-party services like Google Play, Firebase, and Facebook, which have their own terms.`
+  String get thirdPartyContent {
+    return Intl.message(
+      'The app uses third-party services like Google Play, Firebase, and Facebook, which have their own terms.',
+      name: 'thirdPartyContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Internet & Data Charges`
+  String get networkUsage {
+    return Intl.message(
+      'Internet & Data Charges',
+      name: 'networkUsage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `An active internet connection is required. You are responsible for data charges or roaming fees.`
+  String get networkUsageContent {
+    return Intl.message(
+      'An active internet connection is required. You are responsible for data charges or roaming fees.',
+      name: 'networkUsageContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Device Responsibility`
+  String get deviceResponsibility {
+    return Intl.message(
+      'Device Responsibility',
+      name: 'deviceResponsibility',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You are responsible for keeping your device charged and ensuring access to the app.`
+  String get deviceResponsibilityContent {
+    return Intl.message(
+      'You are responsible for keeping your device charged and ensuring access to the app.',
+      name: 'deviceResponsibilityContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Information Accuracy`
+  String get accuracy {
+    return Intl.message(
+      'Information Accuracy',
+      name: 'accuracy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `While we aim to keep the app updated, we rely on third parties and are not liable for losses from inaccurate information.`
+  String get accuracyContent {
+    return Intl.message(
+      'While we aim to keep the app updated, we rely on third parties and are not liable for losses from inaccurate information.',
+      name: 'accuracyContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `App Updates & Termination`
+  String get updates {
+    return Intl.message(
+      'App Updates & Termination',
+      name: 'updates',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We may update or discontinue the app anytime. You agree to accept updates to continue usage.`
+  String get updatesContent {
+    return Intl.message(
+      'We may update or discontinue the app anytime. You agree to accept updates to continue usage.',
+      name: 'updatesContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Changes to Terms`
+  String get termsChanges {
+    return Intl.message(
+      'Changes to Terms',
+      name: 'termsChanges',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `These terms may be updated. Please check this page periodically for changes.`
+  String get termsChangesContent {
+    return Intl.message(
+      'These terms may be updated. Please check this page periodically for changes.',
+      name: 'termsChangesContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `For questions about the terms, email us at: medSync77@gmail.com`
+  String get contactTermsContent {
+    return Intl.message(
+      'For questions about the terms, email us at: medSync77@gmail.com',
+      name: 'contactTermsContent',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Effective Date: 2025-04-19`
+  String get dateTerms {
+    return Intl.message(
+      'Effective Date: 2025-04-19',
+      name: 'dateTerms',
       desc: '',
       args: [],
     );

@@ -14,21 +14,22 @@ class CustomTextFormField extends StatelessWidget {
       this.suffixFunction,
       required this.validator,
       this.onChanged,
-      required this.suffixIconColor,
+      this.suffixIconColor = AppColor.greyColor,
       this.onTap,
       this.onTapOutside,
       required this.focusNode,
-      required this.borderColor});
+      required this.borderColor,
+      required this.prefixIconColor});
   final TextEditingController controller;
   final TextInputType textInputType;
   final IconData prefixIcon;
+  final Color prefixIconColor;
   final String hint;
 
   final bool obscureText;
   final IconData? suffixIcon;
   final Function()? suffixFunction;
   final Function(String)? onChanged;
-
   final Function(PointerDownEvent)? onTapOutside;
   final Function()? onTap;
   final String? Function(String?)? validator;
@@ -50,13 +51,13 @@ class CustomTextFormField extends StatelessWidget {
       decoration: InputDecoration(
           prefixIcon: Icon(
             prefixIcon,
-            color: suffixIconColor,
+            color: prefixIconColor,
           ),
           suffixIcon: IconButton(
               onPressed: suffixFunction,
               icon: Icon(
                 suffixIcon,
-                color: AppColor.greyColor,
+                color: suffixIconColor,
               )),
           hintText: hint,
           hintStyle: AppStyles.styleRegular14

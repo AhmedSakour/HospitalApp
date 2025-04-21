@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:medsync/core/themes/app_colors.dart';
 import 'package:medsync/core/themes/app_styles.dart';
 import 'package:medsync/core/widgets/custom_button.dart';
+import 'package:medsync/features/auth/data/models/modal_bottom_sheet_model.dart';
 import 'package:medsync/features/auth/presentation/views/widgets/custom_listview_options_login.dart';
 import 'package:medsync/features/auth/presentation/views/widgets/custom_modal_bottom_sheet.dart';
 import 'package:medsync/features/auth/presentation/views/widgets/login_textformfields_section.dart';
@@ -53,7 +54,12 @@ class _LoginViewBodyState extends State<LoginViewBody> {
                   title: S.of(context).login,
                   onTap: () {
                     if (formKey.currentState!.validate()) {
-                      showCustomModalBottomSheet(context);
+                      showCustomModalBottomSheet(
+                          context,
+                          ModalBottomSheetModel(
+                              title: S.of(context).welcome,
+                              descritpion: S.of(context).loginSuccess,
+                              icon: Icons.verified));
                     }
                   },
                 ),

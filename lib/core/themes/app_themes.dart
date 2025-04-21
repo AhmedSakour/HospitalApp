@@ -19,6 +19,7 @@ abstract class AppTheme {
         ),
         brightness: Brightness.light,
         colorScheme: const ColorScheme.light(
+          primary: AppColor.whiteColor,
           onPrimary: AppColor.blackColor,
           primaryContainer: AppColor.primaryLightColor,
         ));
@@ -38,6 +39,7 @@ abstract class AppTheme {
             const AppBarTheme(backgroundColor: AppColor.secondaryDarkColor),
         brightness: Brightness.dark,
         colorScheme: const ColorScheme.dark(
+          primary: AppColor.blackColor,
           onPrimary: AppColor.whiteColor,
           primaryContainer: AppColor.primaryDarkColor,
         ));

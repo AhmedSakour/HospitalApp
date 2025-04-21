@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:medsync/core/themes/app_colors.dart';
 import 'package:medsync/core/themes/app_styles.dart';
 import 'package:medsync/core/widgets/custom_button.dart';
-import 'package:medsync/generated/l10n.dart';
+import 'package:medsync/features/auth/data/models/modal_bottom_sheet_model.dart';
 
-void showCustomModalBottomSheet(BuildContext context) {
+void showCustomModalBottomSheet(
+    BuildContext context, ModalBottomSheetModel modalBottomSheetModel) {
   showModalBottomSheet(
     context: context,
     isScrollControlled: true,
@@ -23,11 +24,11 @@ void showCustomModalBottomSheet(BuildContext context) {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                S.of(context).welcome,
+                modalBottomSheetModel.title,
                 style: AppStyles.styleSemiBold24,
               ),
               const SizedBox(height: 14),
-              Text(S.of(context).loginSuccess,
+              Text(modalBottomSheetModel.descritpion,
                   textAlign: TextAlign.center, style: AppStyles.styleRegular14),
               const SizedBox(height: 24),
               CustomButton(
@@ -39,10 +40,11 @@ void showCustomModalBottomSheet(BuildContext context) {
             ],
           ),
         ),
-        const CircleAvatar(
+        CircleAvatar(
           backgroundColor: AppColor.primaryLightColor,
           radius: 40,
-          child: Icon(Icons.verified, color: AppColor.whiteColor, size: 40),
+          child: Icon(modalBottomSheetModel.icon,
+              color: AppColor.whiteColor, size: 40),
         ),
       ],
     ),

@@ -4,8 +4,8 @@ import 'package:medsync/core/themes/app_colors.dart';
 import 'package:medsync/core/themes/app_styles.dart';
 import 'package:medsync/generated/l10n.dart';
 
-class RegisterSection extends StatelessWidget {
-  const RegisterSection({
+class LoginSection extends StatelessWidget {
+  const LoginSection({
     super.key,
   });
 
@@ -15,7 +15,7 @@ class RegisterSection extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          S.of(context).notHaveAccount,
+          S.of(context).haveAccount,
           style: AppStyles.styleRegular15,
         ),
         const SizedBox(
@@ -25,7 +25,7 @@ class RegisterSection extends StatelessWidget {
           onTap: () {
             Navigator.pushNamed(context, AppRoutes.signUp);
           },
-          child: Text(S.of(context).sign,
+          child: Text(S.of(context).login,
               style: AppStyles.styleRegular15
                   .copyWith(color: AppColor.primaryLightColor)),
         ),
