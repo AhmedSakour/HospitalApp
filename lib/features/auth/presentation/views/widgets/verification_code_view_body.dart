@@ -34,7 +34,8 @@ class _VerificationCodeViewBodyState extends State<VerificationCodeViewBody> {
           children: [
             Text(
               S.of(context).verification,
-              style: AppStyles.styleBold24,
+              style: AppStyles.styleBold24
+                  .copyWith(color: Theme.of(context).colorScheme.onPrimary),
             ),
             const SizedBox(height: 14),
             Text(

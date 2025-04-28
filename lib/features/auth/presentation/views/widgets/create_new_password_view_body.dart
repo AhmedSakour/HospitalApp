@@ -29,7 +29,8 @@ class _CreateNewPasswordViewBodyState extends State<CreateNewPasswordViewBody> {
             children: [
               Text(
                 S.of(context).newPassword,
-                style: AppStyles.styleSemiBold24,
+                style: AppStyles.styleSemiBold24
+                    .copyWith(color: Theme.of(context).colorScheme.onPrimary),
               ),
               const SizedBox(height: 40),
               const LoginTextFormFieldsSection(),

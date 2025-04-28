@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:medsync/core/themes/app_colors.dart';
-import 'package:medsync/core/utils/functions/get_current_language.dart';
 
 abstract class AppTheme {
   static ThemeData lightTheme(context, local) {
     return ThemeData(
-        textTheme: local.toString() == 'ar'
+        textTheme: local == 'ar'
             ? GoogleFonts.cairoTextTheme(Theme.of(context)
                 .textTheme
                 .apply(bodyColor: AppColor.blackColor))
@@ -25,9 +24,9 @@ abstract class AppTheme {
         ));
   }
 
-  static ThemeData darkTheme(context) {
+  static ThemeData darkTheme(context, local) {
     return ThemeData(
-        textTheme: getCurrentLangauge() == 'ar'
+        textTheme: local == 'ar'
             ? GoogleFonts.cairoTextTheme(Theme.of(context)
                 .textTheme
                 .apply(bodyColor: AppColor.whiteColor))

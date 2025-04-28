@@ -29,7 +29,8 @@ class _ResetPasswordViewBodyState extends State<ResetPasswordViewBody> {
             children: [
               Text(
                 S.of(context).forgot,
-                style: AppStyles.styleBold24,
+                style: AppStyles.styleBold24
+                    .copyWith(color: Theme.of(context).colorScheme.onPrimary),
               ),
               const SizedBox(height: 14),
               Text(

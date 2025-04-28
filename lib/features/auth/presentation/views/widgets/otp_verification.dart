@@ -30,7 +30,8 @@ class _OtpVerificationState extends State<OtpVerification> {
         defaultPinTheme: PinTheme(
           width: 60,
           height: 60,
-          textStyle: AppStyles.styleBold24,
+          textStyle: AppStyles.styleBold24
+              .copyWith(color: Theme.of(context).colorScheme.onPrimary),
           decoration: BoxDecoration(
             border: Border.all(color: AppColor.greyColor),
             borderRadius: BorderRadius.circular(8),
@@ -39,7 +40,8 @@ class _OtpVerificationState extends State<OtpVerification> {
         focusedPinTheme: PinTheme(
           width: 60,
           height: 60,
-          textStyle: AppStyles.styleBold24,
+          textStyle: AppStyles.styleBold24
+              .copyWith(color: Theme.of(context).colorScheme.onPrimary),
           decoration: BoxDecoration(
             border: Border.all(color: AppColor.primaryLightColor, width: 2),
             borderRadius: BorderRadius.circular(8),
