@@ -79,7 +79,24 @@
         "termsChanges": "تغييرات الشروط",
         "termsChangesContent": "قد يتم تحديث هذه الشروط. يرجى مراجعتها من وقت لآخر.",
         "contactTermsContent": "لأي استفسارات حول الشروط، راسلنا عبر: medSync77@gmail.com",
-        "dateTerms": "تاريخ التطبيق: 2025-04-19"
+        "dateTerms": "تاريخ التطبيق: 2025-04-19",
+        "reset":"إعادة تعيين كلمة المرور",
+        "forgot":"نسيت كلمة السر؟",
+        "subtitleForgot":"أدخل بريدك الإلكتروني وسنرسل لك رمز التأكيد",
+
+        "verification":"أدخل رمز التحقق",
+        "subtitleVerification":"أدخل الرمز الذي أرسلناه إلى بريدك الإلكتروني info***@gmail.com",
+        "verify":"تحقق",
+        "notReceiveCode":"لم تستلم الرمز؟",
+        "resend":"إعادة الإرسال",
+        "wrongCode":"رمز خاطئ",
+        "expired":"انتهت صلاحية الكود",
+        "emptyCode":"كود فارغ",
+        "dismiss":"تجاهل",
+        "error":"خطأ",
+        "newPassword":"إنشاء كلمة مرور جديدة",
+        "createPassword":"إنشاء كلمة مرور",
+        "successResetPassword":"لقد تم إعادة تعيين كلمة المرور الخاصة بك بنجاح."
         
               
        

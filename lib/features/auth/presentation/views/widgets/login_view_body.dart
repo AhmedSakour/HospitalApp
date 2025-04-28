@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:medsync/core/constant/app_routes.dart';
 import 'package:medsync/core/themes/app_colors.dart';
 import 'package:medsync/core/themes/app_styles.dart';
 import 'package:medsync/core/widgets/custom_button.dart';
 import 'package:medsync/features/auth/data/models/modal_bottom_sheet_model.dart';
 import 'package:medsync/features/auth/presentation/views/widgets/custom_listview_options_login.dart';
 import 'package:medsync/features/auth/presentation/views/widgets/custom_modal_bottom_sheet.dart';
+import 'package:medsync/features/auth/presentation/views/widgets/label_section.dart';
 import 'package:medsync/features/auth/presentation/views/widgets/login_textformfields_section.dart';
 import 'package:medsync/features/auth/presentation/views/widgets/or_option_selection.dart';
-import 'package:medsync/features/auth/presentation/views/widgets/register_section.dart';
 import 'package:medsync/generated/l10n.dart';
 
 class LoginViewBody extends StatefulWidget {
@@ -37,10 +38,15 @@ class _LoginViewBodyState extends State<LoginViewBody> {
               SliverToBoxAdapter(
                 child: Align(
                   alignment: Alignment.centerRight,
-                  child: Text(
-                    S.of(context).forgetPassword,
-                    style: AppStyles.styleMedium14
-                        .copyWith(color: AppColor.primaryLightColor),
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, AppRoutes.resetPassword);
+                    },
+                    child: Text(
+                      S.of(context).forgetPassword,
+                      style: AppStyles.styleMedium14
+                          .copyWith(color: AppColor.primaryLightColor),
+                    ),
                   ),
                 ),
               ),
@@ -69,8 +75,14 @@ class _LoginViewBodyState extends State<LoginViewBody> {
                   height: 24,
                 ),
               ),
-              const SliverToBoxAdapter(
-                child: RegisterSection(),
+              SliverToBoxAdapter(
+                child: LabelSection(
+                  question: S.of(context).notHaveAccount,
+                  option: S.of(context).sign,
+                  onTap: () {
+                    Navigator.pushNamed(context, AppRoutes.signUp);
+                  },
+                ),
               ),
               const SliverToBoxAdapter(
                 child: SizedBox(

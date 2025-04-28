@@ -45,6 +45,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "If you have any questions, email us at: medSync77@gmail.com"),
         "contactTermsContent": MessageLookupByLibrary.simpleMessage(
             "For questions about the terms, email us at: medSync77@gmail.com"),
+        "createPassword":
+            MessageLookupByLibrary.simpleMessage("Create Password"),
         "dataRetention":
             MessageLookupByLibrary.simpleMessage("Data Retention Policy"),
         "dataRetentionContent": MessageLookupByLibrary.simpleMessage(
@@ -57,8 +59,12 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Device Responsibility"),
         "deviceResponsibilityContent": MessageLookupByLibrary.simpleMessage(
             "You are responsible for keeping your device charged and ensuring access to the app."),
+        "dismiss": MessageLookupByLibrary.simpleMessage("Dismiss"),
+        "emptyCode": MessageLookupByLibrary.simpleMessage("empty code"),
+        "error": MessageLookupByLibrary.simpleMessage("Error"),
         "errorFormateEmail":
             MessageLookupByLibrary.simpleMessage("email format error"),
+        "expired": MessageLookupByLibrary.simpleMessage("code is expired"),
         "facebookOption":
             MessageLookupByLibrary.simpleMessage("Continue with Facebook"),
         "firstChild": MessageLookupByLibrary.simpleMessage(
@@ -69,6 +75,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Only anonymized data is shared with third parties."),
         "forgetPassword":
             MessageLookupByLibrary.simpleMessage("Forgot Password?"),
+        "forgot": MessageLookupByLibrary.simpleMessage("Forgot Your Password?"),
         "googleOption":
             MessageLookupByLibrary.simpleMessage("Continue with Google"),
         "haveAccount": MessageLookupByLibrary.simpleMessage(
@@ -90,8 +97,12 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Internet & Data Charges"),
         "networkUsageContent": MessageLookupByLibrary.simpleMessage(
             "An active internet connection is required. You are responsible for data charges or roaming fees."),
+        "newPassword":
+            MessageLookupByLibrary.simpleMessage("Create New Password"),
         "notHaveAccount":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account?"),
+        "notReceiveCode":
+            MessageLookupByLibrary.simpleMessage("Didn’t receive the code?"),
         "ok": MessageLookupByLibrary.simpleMessage("OK"),
         "or": MessageLookupByLibrary.simpleMessage("OR"),
         "partyAccess":
@@ -99,6 +110,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "privacy": MessageLookupByLibrary.simpleMessage(" Privacy Policy "),
         "registerSuccess": MessageLookupByLibrary.simpleMessage(
             "Your account has been successfully registered"),
+        "resend": MessageLookupByLibrary.simpleMessage("Resend"),
+        "reset": MessageLookupByLibrary.simpleMessage("Reset Password"),
         "rights": MessageLookupByLibrary.simpleMessage("Opt-Out Rights"),
         "rightsContent": MessageLookupByLibrary.simpleMessage(
             "You can stop data collection by uninstalling the app."),
@@ -121,7 +134,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "start": MessageLookupByLibrary.simpleMessage("Get Started"),
         "subTitleBoard": MessageLookupByLibrary.simpleMessage(
             "Welcome Aboard MedSync: Navigating Your Health Journey"),
+        "subtitleForgot": MessageLookupByLibrary.simpleMessage(
+            "Enter your email , we will send you confirmation code"),
+        "subtitleVerification": MessageLookupByLibrary.simpleMessage(
+            "Enter code that we have sent to your mail info***@gmail.com"),
         "success": MessageLookupByLibrary.simpleMessage("Success"),
+        "successResetPassword": MessageLookupByLibrary.simpleMessage(
+            "You have successfully reset your password."),
         "terms": MessageLookupByLibrary.simpleMessage(" Terms of Service "),
         "termsChanges":
             MessageLookupByLibrary.simpleMessage("Changes to Terms"),
@@ -151,6 +170,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("please enter your name"),
         "validatePassword":
             MessageLookupByLibrary.simpleMessage("please enter your password"),
-        "welcome": MessageLookupByLibrary.simpleMessage("Welcome Back")
+        "verification":
+            MessageLookupByLibrary.simpleMessage("Enter Verification Code"),
+        "verify": MessageLookupByLibrary.simpleMessage("Verify"),
+        "welcome": MessageLookupByLibrary.simpleMessage("Welcome Back"),
+        "wrongCode": MessageLookupByLibrary.simpleMessage("Wrong code")
       };
 }

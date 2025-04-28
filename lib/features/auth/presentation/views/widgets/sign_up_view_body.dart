@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:medsync/core/constant/app_routes.dart';
 import 'package:medsync/core/widgets/custom_button.dart';
 import 'package:medsync/features/auth/data/models/modal_bottom_sheet_model.dart';
 import 'package:medsync/features/auth/presentation/views/widgets/Terms_service_and_privacy_policy_section.dart';
 import 'package:medsync/features/auth/presentation/views/widgets/custom_listview_options_login.dart';
 import 'package:medsync/features/auth/presentation/views/widgets/custom_modal_bottom_sheet.dart';
-import 'package:medsync/features/auth/presentation/views/widgets/login_section.dart';
+import 'package:medsync/features/auth/presentation/views/widgets/label_section.dart';
 import 'package:medsync/features/auth/presentation/views/widgets/or_option_selection.dart';
 import 'package:medsync/features/auth/presentation/views/widgets/sign_up_textformfields_section.dart';
 import 'package:medsync/generated/l10n.dart';
@@ -64,8 +65,14 @@ class _SignUpViewBodyState extends State<SignUpViewBody> {
                 height: 24,
               ),
             ),
-            const SliverToBoxAdapter(
-              child: LoginSection(),
+            SliverToBoxAdapter(
+              child: LabelSection(
+                question: S.of(context).haveAccount,
+                option: S.of(context).login,
+                onTap: () {
+                  Navigator.pushNamed(context, AppRoutes.login);
+                },
+              ),
             ),
             const SliverToBoxAdapter(
               child: SizedBox(

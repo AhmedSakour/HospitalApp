@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:medsync/core/constant/app_routes.dart';
 import 'package:medsync/core/themes/app_colors.dart';
 import 'package:medsync/core/themes/app_styles.dart';
-import 'package:medsync/generated/l10n.dart';
 
-class RegisterSection extends StatelessWidget {
-  const RegisterSection({
-    super.key,
-  });
+class LabelSection extends StatelessWidget {
+  const LabelSection(
+      {super.key, required this.question, required this.option, this.onTap});
+  final String question;
+  final String option;
+  final Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -15,17 +15,15 @@ class RegisterSection extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          S.of(context).notHaveAccount,
+          question,
           style: AppStyles.styleRegular15,
         ),
         const SizedBox(
           width: 5,
         ),
         GestureDetector(
-          onTap: () {
-            Navigator.pushNamed(context, AppRoutes.signUp);
-          },
-          child: Text(S.of(context).sign,
+          onTap: onTap,
+          child: Text(option,
               style: AppStyles.styleRegular15
                   .copyWith(color: AppColor.primaryLightColor)),
         ),

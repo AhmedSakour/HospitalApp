@@ -44,6 +44,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "إذا كان لديك أي أسئلة، راسلنا على البريد الإلكتروني: medSync77@gmail.com"),
         "contactTermsContent": MessageLookupByLibrary.simpleMessage(
             "لأي استفسارات حول الشروط، راسلنا عبر: medSync77@gmail.com"),
+        "createPassword":
+            MessageLookupByLibrary.simpleMessage("إنشاء كلمة مرور"),
         "dataRetention":
             MessageLookupByLibrary.simpleMessage("سياسة الاحتفاظ بالبيانات"),
         "dataRetentionContent": MessageLookupByLibrary.simpleMessage(
@@ -56,8 +58,12 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("مسؤولية الجهاز"),
         "deviceResponsibilityContent": MessageLookupByLibrary.simpleMessage(
             "أنت مسؤول عن شحن جهازك وضمان الوصول إلى التطبيق."),
+        "dismiss": MessageLookupByLibrary.simpleMessage("تجاهل"),
+        "emptyCode": MessageLookupByLibrary.simpleMessage("كود فارغ"),
+        "error": MessageLookupByLibrary.simpleMessage("خطأ"),
         "errorFormateEmail": MessageLookupByLibrary.simpleMessage(
             "خطأ في تنسيق البريد الإلكتروني"),
+        "expired": MessageLookupByLibrary.simpleMessage("انتهت صلاحية الكود"),
         "facebookOption":
             MessageLookupByLibrary.simpleMessage("متابعة باستخدام فيسبوك"),
         "firstChild": MessageLookupByLibrary.simpleMessage(
@@ -68,6 +74,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "يتم مشاركة البيانات المجهولة فقط مع أطراف ثالثة."),
         "forgetPassword":
             MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
+        "forgot": MessageLookupByLibrary.simpleMessage("نسيت كلمة السر؟"),
         "googleOption":
             MessageLookupByLibrary.simpleMessage("متابعة باستخدام جوجل"),
         "haveAccount":
@@ -89,8 +96,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "networkUsage": MessageLookupByLibrary.simpleMessage("الاتصال والرسوم"),
         "networkUsageContent": MessageLookupByLibrary.simpleMessage(
             "يتطلب التطبيق اتصالًا بالإنترنت. أنت مسؤول عن رسوم البيانات أو التجوال."),
+        "newPassword":
+            MessageLookupByLibrary.simpleMessage("إنشاء كلمة مرور جديدة"),
         "notHaveAccount":
             MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟"),
+        "notReceiveCode":
+            MessageLookupByLibrary.simpleMessage("لم تستلم الرمز؟"),
         "ok": MessageLookupByLibrary.simpleMessage("نعم"),
         "or": MessageLookupByLibrary.simpleMessage("أو"),
         "partyAccess":
@@ -98,6 +109,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "privacy": MessageLookupByLibrary.simpleMessage(" سياسة الخصوصية "),
         "registerSuccess":
             MessageLookupByLibrary.simpleMessage("لقد تم تسجيل حسابك بنجاح"),
+        "resend": MessageLookupByLibrary.simpleMessage("إعادة الإرسال"),
+        "reset":
+            MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور"),
         "rights": MessageLookupByLibrary.simpleMessage("حقوق الانسحاب"),
         "rightsContent": MessageLookupByLibrary.simpleMessage(
             "يمكنك إيقاف جمع البيانات عن طريق إلغاء تثبيت التطبيق."),
@@ -121,7 +135,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "start": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
         "subTitleBoard": MessageLookupByLibrary.simpleMessage(
             "مرحبًا بك في ميدسينك: دليلك في رحلة العناية بصحتك"),
+        "subtitleForgot": MessageLookupByLibrary.simpleMessage(
+            "أدخل بريدك الإلكتروني وسنرسل لك رمز التأكيد"),
+        "subtitleVerification": MessageLookupByLibrary.simpleMessage(
+            "أدخل الرمز الذي أرسلناه إلى بريدك الإلكتروني info***@gmail.com"),
         "success": MessageLookupByLibrary.simpleMessage("نجاح"),
+        "successResetPassword": MessageLookupByLibrary.simpleMessage(
+            "لقد تم إعادة تعيين كلمة المرور الخاصة بك بنجاح."),
         "terms": MessageLookupByLibrary.simpleMessage(" شروط الخدمة "),
         "termsChanges": MessageLookupByLibrary.simpleMessage("تغييرات الشروط"),
         "termsChangesContent": MessageLookupByLibrary.simpleMessage(
@@ -150,6 +170,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("الرجاء إدخال اسمك"),
         "validatePassword":
             MessageLookupByLibrary.simpleMessage("يرجى إدخال كلمة المرور"),
-        "welcome": MessageLookupByLibrary.simpleMessage("أهلاً بعودتك")
+        "verification": MessageLookupByLibrary.simpleMessage("أدخل رمز التحقق"),
+        "verify": MessageLookupByLibrary.simpleMessage("تحقق"),
+        "welcome": MessageLookupByLibrary.simpleMessage("أهلاً بعودتك"),
+        "wrongCode": MessageLookupByLibrary.simpleMessage("رمز خاطئ")
       };
 }

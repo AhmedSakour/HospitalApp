@@ -3,6 +3,7 @@ import 'package:medsync/core/themes/app_colors.dart';
 import 'package:medsync/core/themes/app_styles.dart';
 import 'package:medsync/core/widgets/custom_button.dart';
 import 'package:medsync/features/auth/data/models/modal_bottom_sheet_model.dart';
+import 'package:medsync/generated/l10n.dart';
 
 void showCustomModalBottomSheet(
     BuildContext context, ModalBottomSheetModel modalBottomSheetModel) {
@@ -32,7 +33,7 @@ void showCustomModalBottomSheet(
                   textAlign: TextAlign.center, style: AppStyles.styleRegular14),
               const SizedBox(height: 24),
               CustomButton(
-                title: 'OK',
+                title: S.of(context).ok,
                 onTap: () {
                   Navigator.pop(context);
                 },

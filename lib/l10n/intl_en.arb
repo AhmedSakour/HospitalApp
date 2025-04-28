@@ -80,7 +80,24 @@
         "termsChanges": "Changes to Terms",
         "termsChangesContent": "These terms may be updated. Please check this page periodically for changes.",
         "contactTermsContent": "For questions about the terms, email us at: medSync77@gmail.com",
-        "dateTerms": "Effective Date: 2025-04-19"
+        "dateTerms": "Effective Date: 2025-04-19",
+        "reset":"Reset Password",
+        "forgot":"Forgot Your Password?",
+        "subtitleForgot":"Enter your email , we will send you confirmation code",
+        
+        "verification":"Enter Verification Code",
+        "subtitleVerification":"Enter code that we have sent to your mail info***@gmail.com",
+        "verify":"Verify",
+        "notReceiveCode":"Didn’t receive the code?",
+        "resend":"Resend",
+        "wrongCode":"Wrong code",
+        "expired":"code is expired",
+        "emptyCode":"empty code",
+        "dismiss":"Dismiss",
+        "error":"Error",
+        "newPassword":"Create New Password",
+        "createPassword":"Create Password",
+        "successResetPassword":"You have successfully reset your password."
               
               
 
