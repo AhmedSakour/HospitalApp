@@ -63,9 +63,13 @@ class _LoginViewBodyState extends State<LoginViewBody> {
                       showCustomModalBottomSheet(
                           context,
                           ModalBottomSheetModel(
-                              title: S.of(context).welcome,
-                              descritpion: S.of(context).loginSuccess,
-                              icon: Icons.verified));
+                            title: S.of(context).welcome,
+                            descritpion: S.of(context).loginSuccess,
+                            icon: Icons.verified,
+                            onTap: () {
+                              Navigator.pushNamed(context, AppRoutes.home);
+                            },
+                          ));
                     }
                   },
                 ),

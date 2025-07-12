@@ -30,6 +30,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "agreement": MessageLookupByLibrary.simpleMessage("User Agreement"),
         "agreementContent": MessageLookupByLibrary.simpleMessage(
             "By downloading or using the app, you agree to our terms. Unauthorized copying, modifying, translating, or creating derivatives of the app is not allowed."),
+        "ambulance": MessageLookupByLibrary.simpleMessage("Ambulance"),
         "and": MessageLookupByLibrary.simpleMessage("and"),
         "appleOption":
             MessageLookupByLibrary.simpleMessage("Continue with Apple"),
@@ -67,6 +68,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "expired": MessageLookupByLibrary.simpleMessage("code is expired"),
         "facebookOption":
             MessageLookupByLibrary.simpleMessage("Continue with Facebook"),
+        "findnear": MessageLookupByLibrary.simpleMessage("Find Nearby"),
         "firstChild": MessageLookupByLibrary.simpleMessage(
             "We do not knowingly collect data from children under 13."),
         "firstInformation": MessageLookupByLibrary.simpleMessage(
@@ -80,6 +82,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Continue with Google"),
         "haveAccount": MessageLookupByLibrary.simpleMessage(
             "Already have an account yet?"),
+        "hi": MessageLookupByLibrary.simpleMessage("Hi,"),
         "hintEmail": MessageLookupByLibrary.simpleMessage("Enter your email"),
         "hintName": MessageLookupByLibrary.simpleMessage("Enter your name"),
         "hintPassword":
@@ -89,6 +92,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "loginSuccess": MessageLookupByLibrary.simpleMessage(
             "Once again you login successfully into MedSync app"),
+        "lookforDoctor": MessageLookupByLibrary.simpleMessage(
+            "Looking For Your Desire Specialist Doctor ?"),
+        "medicine": MessageLookupByLibrary.simpleMessage("Medicine"),
         "modification":
             MessageLookupByLibrary.simpleMessage("Modifications & Charges"),
         "modificationContent": MessageLookupByLibrary.simpleMessage(
@@ -108,6 +114,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "partyAccess":
             MessageLookupByLibrary.simpleMessage("Third Party Access"),
         "privacy": MessageLookupByLibrary.simpleMessage(" Privacy Policy "),
+        "questionFeel":
+            MessageLookupByLibrary.simpleMessage("How do you feel today?"),
+        "quickHelp": MessageLookupByLibrary.simpleMessage("Quick Help"),
         "registerSuccess": MessageLookupByLibrary.simpleMessage(
             "Your account has been successfully registered"),
         "resend": MessageLookupByLibrary.simpleMessage("Resend"),
@@ -160,6 +169,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Discover Wellness with MedSync"),
         "titleOnBoard3":
             MessageLookupByLibrary.simpleMessage("Best Doctor Appointment App"),
+        "topDoctors": MessageLookupByLibrary.simpleMessage("Top Doctors"),
         "updates":
             MessageLookupByLibrary.simpleMessage("App Updates & Termination"),
         "updatesContent": MessageLookupByLibrary.simpleMessage(

@@ -969,6 +969,86 @@ class S {
       args: [],
     );
   }
+
+  /// `Hi,`
+  String get hi {
+    return Intl.message(
+      'Hi,',
+      name: 'hi',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `How do you feel today?`
+  String get questionFeel {
+    return Intl.message(
+      'How do you feel today?',
+      name: 'questionFeel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Looking For Your Desire Specialist Doctor ?`
+  String get lookforDoctor {
+    return Intl.message(
+      'Looking For Your Desire Specialist Doctor ?',
+      name: 'lookforDoctor',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Find Nearby`
+  String get findnear {
+    return Intl.message(
+      'Find Nearby',
+      name: 'findnear',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ambulance`
+  String get ambulance {
+    return Intl.message(
+      'Ambulance',
+      name: 'ambulance',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Medicine`
+  String get medicine {
+    return Intl.message(
+      'Medicine',
+      name: 'medicine',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Quick Help`
+  String get quickHelp {
+    return Intl.message(
+      'Quick Help',
+      name: 'quickHelp',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Top Doctors`
+  String get topDoctors {
+    return Intl.message(
+      'Top Doctors',
+      name: 'topDoctors',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

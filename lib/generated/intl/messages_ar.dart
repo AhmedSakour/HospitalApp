@@ -29,6 +29,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "agreement": MessageLookupByLibrary.simpleMessage("اتفاقية المستخدم"),
         "agreementContent": MessageLookupByLibrary.simpleMessage(
             "من خلال تنزيل التطبيق أو استخدامه، فإنك توافق على الشروط. يُمنع نسخ التطبيق أو تعديله أو ترجمته أو إنشاء نسخ مشتقة منه."),
+        "ambulance": MessageLookupByLibrary.simpleMessage("سيارة اسعاف"),
         "and": MessageLookupByLibrary.simpleMessage("و"),
         "appleOption":
             MessageLookupByLibrary.simpleMessage("متابعة باستخدام آبل"),
@@ -66,6 +67,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "expired": MessageLookupByLibrary.simpleMessage("انتهت صلاحية الكود"),
         "facebookOption":
             MessageLookupByLibrary.simpleMessage("متابعة باستخدام فيسبوك"),
+        "findnear":
+            MessageLookupByLibrary.simpleMessage("البحث عن الأماكن القريبة"),
         "firstChild": MessageLookupByLibrary.simpleMessage(
             "نحن لا نقوم بجمع البيانات من الأطفال دون سن 13 عامًا بشكل متعمد."),
         "firstInformation": MessageLookupByLibrary.simpleMessage(
@@ -79,6 +82,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("متابعة باستخدام جوجل"),
         "haveAccount":
             MessageLookupByLibrary.simpleMessage("هل لديك حساب بالفعل؟"),
+        "hi": MessageLookupByLibrary.simpleMessage("أهلاً،"),
         "hintEmail":
             MessageLookupByLibrary.simpleMessage("أدخل بريدك الإلكتروني"),
         "hintName": MessageLookupByLibrary.simpleMessage("أدخل اسمك"),
@@ -89,6 +93,9 @@ class MessageLookup extends MessageLookupByLibrary {
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "loginSuccess": MessageLookupByLibrary.simpleMessage(
             "مرة أخرى قمت بتسجيل الدخول بنجاح إلى تطبيق ميدسينك"),
+        "lookforDoctor": MessageLookupByLibrary.simpleMessage(
+            "هل تبحث عن الطبيب المتخصص الذي ترغب به؟"),
+        "medicine": MessageLookupByLibrary.simpleMessage("الدواء"),
         "modification":
             MessageLookupByLibrary.simpleMessage("التعديلات والرسوم"),
         "modificationContent": MessageLookupByLibrary.simpleMessage(
@@ -107,6 +114,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "partyAccess":
             MessageLookupByLibrary.simpleMessage("وصول الطرف الثالث"),
         "privacy": MessageLookupByLibrary.simpleMessage(" سياسة الخصوصية "),
+        "questionFeel": MessageLookupByLibrary.simpleMessage("كيف تشعر اليوم؟"),
+        "quickHelp": MessageLookupByLibrary.simpleMessage("مساعدة سريعة"),
         "registerSuccess":
             MessageLookupByLibrary.simpleMessage("لقد تم تسجيل حسابك بنجاح"),
         "resend": MessageLookupByLibrary.simpleMessage("إعادة الإرسال"),
@@ -160,6 +169,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "استمتع بحياة صحية مع ميدسينك"),
         "titleOnBoard3": MessageLookupByLibrary.simpleMessage(
             "أفضل تطبيق لحجز مواعيد مع الأطباء"),
+        "topDoctors": MessageLookupByLibrary.simpleMessage("أفضل الأطباء"),
         "updates":
             MessageLookupByLibrary.simpleMessage("تحديثات التطبيق والإيقاف"),
         "updatesContent": MessageLookupByLibrary.simpleMessage(

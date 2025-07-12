@@ -96,7 +96,16 @@
         "error":"خطأ",
         "newPassword":"إنشاء كلمة مرور جديدة",
         "createPassword":"إنشاء كلمة مرور",
-        "successResetPassword":"لقد تم إعادة تعيين كلمة المرور الخاصة بك بنجاح."
+        "successResetPassword":"لقد تم إعادة تعيين كلمة المرور الخاصة بك بنجاح.", 
+
+        "hi":"أهلاً،",
+        "questionFeel":"كيف تشعر اليوم؟",
+        "lookforDoctor":"هل تبحث عن الطبيب المتخصص الذي ترغب به؟",
+        "findnear":"البحث عن الأماكن القريبة",
+        "ambulance":"سيارة اسعاف",
+        "medicine":"الدواء",
+        "quickHelp":"مساعدة سريعة",
+        "topDoctors":"أفضل الأطباء"
         
               
        

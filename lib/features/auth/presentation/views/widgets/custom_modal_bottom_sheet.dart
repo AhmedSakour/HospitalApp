@@ -34,9 +34,7 @@ void showCustomModalBottomSheet(
               const SizedBox(height: 24),
               CustomButton(
                 title: S.of(context).ok,
-                onTap: () {
-                  Navigator.pop(context);
-                },
+                onTap: modalBottomSheetModel.onTap,
               ),
             ],
           ),

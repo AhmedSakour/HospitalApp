@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Locale languageApp = const Locale('en');
+    Locale languageApp = const Locale('ar');
 
     return MaterialApp(
       localizationsDelegates: const [
@@ -45,7 +45,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: AppRoutes.appLayout,
       onGenerateRoute: AppRoutes.generateRoute,
-      theme: AppTheme.darkTheme(context, languageApp),
+      theme: AppTheme.lightTheme(context, languageApp),
     );
   }
 }

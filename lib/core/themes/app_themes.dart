@@ -5,7 +5,7 @@ import 'package:medsync/core/themes/app_colors.dart';
 abstract class AppTheme {
   static ThemeData lightTheme(context, local) {
     return ThemeData(
-        textTheme: local == 'ar'
+        textTheme: local.toString() == 'ar'
             ? GoogleFonts.cairoTextTheme(Theme.of(context)
                 .textTheme
                 .apply(bodyColor: AppColor.blackColor))
@@ -26,7 +26,7 @@ abstract class AppTheme {
 
   static ThemeData darkTheme(context, local) {
     return ThemeData(
-        textTheme: local == 'ar'
+        textTheme: local.toString() == 'ar'
             ? GoogleFonts.cairoTextTheme(Theme.of(context)
                 .textTheme
                 .apply(bodyColor: AppColor.whiteColor))

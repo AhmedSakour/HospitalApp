@@ -10,6 +10,7 @@ import 'package:medsync/features/auth/presentation/views/login_view.dart';
 import 'package:medsync/features/auth/presentation/views/reset_password_view.dart';
 import 'package:medsync/features/auth/presentation/views/sign_up_view.dart';
 import 'package:medsync/features/auth/presentation/views/verification_code_view.dart';
+import 'package:medsync/features/home/presentation/views/home_view.dart';
 import 'package:medsync/features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:medsync/features/splash/presentation/views/splash_view.dart';
 
@@ -22,6 +23,7 @@ class AppRoutes {
   static const String resetPassword = '/resetPassword';
   static const String verificationCode = '/verification';
   static const String createNewPassword = '/createNewPassword';
+  static const String home = '/home';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -53,7 +55,8 @@ class AppRoutes {
             settings: settings);
       case createNewPassword:
         return MaterialPageRoute(builder: (_) => const CreateNewPasswordView());
-
+      case home:
+        return MaterialPageRoute(builder: (_) => const HomeView());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(

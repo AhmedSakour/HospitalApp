@@ -97,7 +97,16 @@
         "error":"Error",
         "newPassword":"Create New Password",
         "createPassword":"Create Password",
-        "successResetPassword":"You have successfully reset your password."
+        "successResetPassword":"You have successfully reset your password.",
+
+        "hi":"Hi,",
+        "questionFeel":"How do you feel today?",
+        "lookforDoctor":"Looking For Your Desire Specialist Doctor ?",
+        "findnear":"Find Nearby",
+        "ambulance":"Ambulance",
+        "medicine":"Medicine",
+        "quickHelp":"Quick Help",
+        "topDoctors":"Top Doctors"
               
               
 

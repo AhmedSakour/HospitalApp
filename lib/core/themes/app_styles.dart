@@ -19,10 +19,28 @@ abstract class AppStyles {
     fontWeight: FontWeight.w600,
     fontSize: AppStyles.getResponsiveFontSize(fontSize: 16),
   );
+
+  static TextStyle styleSemiBold18 = TextStyle(
+    color: AppColor.whiteColor,
+    fontWeight: FontWeight.w600,
+    fontSize: AppStyles.getResponsiveFontSize(fontSize: 18),
+  );
+
   static TextStyle styleSemiBold28 = TextStyle(
     color: AppColor.lightBlack,
     fontWeight: FontWeight.w600,
     fontSize: AppStyles.getResponsiveFontSize(fontSize: 28),
+  );
+  static TextStyle styleSemiBold14 = TextStyle(
+    color: AppColor.primaryLightColor,
+    fontWeight: FontWeight.w600,
+    fontSize: AppStyles.getResponsiveFontSize(fontSize: 14),
+  );
+
+  static TextStyle styleMedium12 = TextStyle(
+    color: AppColor.primaryLightColor,
+    fontWeight: FontWeight.w500,
+    fontSize: AppStyles.getResponsiveFontSize(fontSize: 12),
   );
   static TextStyle styleMedium14 = TextStyle(
     color: AppColor.whiteColor,
@@ -33,6 +51,11 @@ abstract class AppStyles {
     color: AppColor.greyColor,
     fontWeight: FontWeight.w500,
     fontSize: AppStyles.getResponsiveFontSize(fontSize: 16),
+  );
+  static TextStyle styleRegular13 = TextStyle(
+    color: AppColor.greyColor,
+    fontWeight: FontWeight.w400,
+    fontSize: AppStyles.getResponsiveFontSize(fontSize: 13),
   );
   static TextStyle styleRegular14 = TextStyle(
     color: AppColor.greyColor,
@@ -48,6 +71,11 @@ abstract class AppStyles {
     color: AppColor.greyColor,
     fontWeight: FontWeight.w700,
     fontSize: AppStyles.getResponsiveFontSize(fontSize: 16),
+  );
+  static TextStyle styleBold18 = TextStyle(
+    color: AppColor.blackColor,
+    fontWeight: FontWeight.w700,
+    fontSize: AppStyles.getResponsiveFontSize(fontSize: 18),
   );
   static TextStyle styleRegular16 = TextStyle(
     color: AppColor.greyColor,
